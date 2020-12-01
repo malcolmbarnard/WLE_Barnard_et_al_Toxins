@@ -1,7 +1,7 @@
 %%Executable File for Figures 2-7 Barnard et al. (In Prep) Toxins
 %Please cite as Barnard, M.A. GitHub: malcolmbarnard/WLE_Barnard_et_al_Toxins. 2020, doi:10.5281/zenodo.4281128.
 %Must import 2019ErieDataForImport.csv prior to running the script 
-z = 6;
+z = 1;
 % Execubtable demands
 %% z = 1, June Chlorophyll a
 %% z = 2, August Chlorophyll a

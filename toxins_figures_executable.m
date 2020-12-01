@@ -1,7 +1,7 @@
-%%Executable File for Barnard et al. (In Prep) Toxins
-%Please cite as Barnard, M.A. (2020) 
+%%Executable File for Figures 2-7 Barnard et al. (In Prep) Toxins
+%Please cite as Barnard, M.A. GitHub: malcolmbarnard/WLE_Barnard_et_al_Toxins. 2020, doi:10.5281/zenodo.4281128.
 %Must import 2019ErieDataForImport.csv prior to running the script 
-z = 1;
+z = 6;
 % Execubtable demands
 %% z = 1, June Chlorophyll a
 %% z = 2, August Chlorophyll a
@@ -17,6 +17,7 @@ if z == 1
    model_errora = [JMCS JMCDS];
    model_seriesb = [JSC JSCD]; 
    model_errorb = [JSCS JSCDS];
+   d = [1,2,3,4];
    subplot(3,2,1)
    hold on
    h1 = plot(d,Chl_J_M_Control,'-o','color',[0 0 0],'markerfacecolor',[0 0 0]);   
@@ -130,7 +131,8 @@ elseif z == 2
     model_seriesa = [AMC AMCD]; 
     model_errora = [AMCS AMCDS];
     model_seriesb = [ASC ASCD]; 
-    model_errorb = [ASCS ASCDS];
+    model_errorb = [ASCS ASDCS];
+    d = [1,2,3,4];
     subplot(3,2,1)
     hold on
     h1 = plot(d,Chl_A_M_Control,'-o','color',[0 0 0],'markerfacecolor',[0 0 0]);
@@ -148,7 +150,7 @@ elseif z == 2
     title('August 2019 Maumee Bay No Dilution Chlorophyll a Production')
     xlabel('Days (a)')
     ylabel('chl a (\mug L^-^1)')
-    ylim([0 200])
+    ylim([0 500])
     hold off
     subplot(3,2,2)
     hold on
@@ -165,7 +167,7 @@ elseif z == 2
     title('June 2019 Sandusky Bay No Dilution Chlorophyll a Production')
     xlabel('Days (b)')
     ylabel('chl a (\mug L^-^1)')
-    ylim([0 80])
+    ylim([0 200])
     hold off
    
     subplot(3,2,3)
@@ -183,7 +185,7 @@ elseif z == 2
     title('June 2019 Maumee Bay 40% Dilution Chlorophyll a Production')
     xlabel('Days (c)')
     ylabel('chl a (\mug L^-^1)')
-    ylim([0 200])
+    ylim([0 500])
    
     subplot(3,2,4)
     hold on
@@ -200,7 +202,7 @@ elseif z == 2
     title('June 2019 Sandusky Bay 40% Dilution Chlorophyll a Production')
     xlabel('Days (d)')
     ylabel('chl a (\mug L^-^1)')
-    ylim([0 80])
+    ylim([0 200])
     subplot(3,2,5)
     hold on
     hb1=bar(model_seriesa, 'grouped');
@@ -243,6 +245,7 @@ elseif z == 3
     labl1J = ["Control";"+NO_3";"+NH_4";"+PO_4";"+N&P"];
     model_seriesc = [JM JMD]; 
     model_errorc = [JMS JMDS];
+    d = [1,2,3,4];
     subplot(2,2,1)
     hold on
     h1 = plot(d,MC_J_S_Control,'-o','color',[0 0 0],'markerfacecolor',[0 0 0]);
@@ -259,7 +262,7 @@ elseif z == 3
     xlabel('Days (a)')
     ylabel('microcystin (\mug L^-^1)')
     ylabel('anatoxin (\mug L^-^1)')
-    ylim([0 200])
+    ylim([0 0.4])
     hold off
    
     subplot(2,2,2)
@@ -277,7 +280,7 @@ elseif z == 3
     title('June 2019 Sandusky Bay 40% Dilution Microcystin Production')
     xlabel('Days (b)')
     ylabel('microcystin (\mug L^-^1)')
-    ylim([0 80])
+    ylim([0 0.4])
     hold off
    
    
@@ -305,22 +308,25 @@ elseif z == 4
     labl1A = ["Control";"+NO_3";"+NH_4";"+Urea";"+PO_4";"+N&P"];
     model_seriesc = [AM AMD]; 
     model_errorc = [AMS AMDS];
+    d = [1,2,3,4];
     subplot(2,2,1)
     hold on
-    h7 = plot(d,MC_J_S_Control,':o','color',[0 0 0],'markerfacecolor',[0 0 0]);
-    h8 = plot(d,MC_J_S_NO3,':x','color',[0.9 0.6 0],'markerfacecolor',[0.9 0.6 0]);
-    h9 = plot(d,MC_J_S_NH4,':+','color',[0.35 0.7 0.9],'markerfacecolor',[0.35 0.7 0.9]);
-    h11 = plot(d,MC_J_S_PO4,':d','color',[0 0.6 .5],'markerfacecolor',[0 0.6 .5]);
-    h12 = plot(d,MC_J_S_NP,':s','color',[0.8 0.4 0],'markerfacecolor',[0.8 0.4 0]);
-    e7 = errorbar(d,MC_J_S_Control,MC_J_S_Control_SD,'color',[0 0 0]);
-    e8 = errorbar(d,MC_J_S_NO3,MC_J_S_NO3_SD,'color',[0.9 0.6 0]);
-    e9 = errorbar(d,MC_J_S_NH4,MC_J_S_NH4_SD,'color',[0.35 0.7 0.9]);
-    e11 = errorbar(d,MC_J_S_PO4,MC_J_S_PO4_SD,'color',[0 0.6 .5]);
-    e12 = errorbar(d,MC_J_S_NP,MC_J_S_NP_SD,'color',[0.8 0.4 0]);
+    h7 = plot(d,MC_A_M_Control,':o','color',[0 0 0],'markerfacecolor',[0 0 0]);
+    h8 = plot(d,MC_A_M_NO3,':x','color',[0.9 0.6 0],'markerfacecolor',[0.9 0.6 0]);
+    h9 = plot(d,MC_A_M_NH4,':+','color',[0.35 0.7 0.9],'markerfacecolor',[0.35 0.7 0.9]);
+    h10 = plot(d,MC_A_M_UREA,':*','color',[0 0.45 0.70],'markerfacecolor',[0 0.45 0.70]);
+    h11 = plot(d,MC_A_M_PO4,':d','color',[0 0.6 .5],'markerfacecolor',[0 0.6 .5]);
+    h12 = plot(d,MC_A_M_NP,':s','color',[0.8 0.4 0],'markerfacecolor',[0.8 0.4 0]);
+    e7 = errorbar(d,MC_A_M_Control,MC_A_M_Control_SD,'color',[0 0 0]);
+    e8 = errorbar(d,MC_A_M_NO3,MC_A_M_NO3_SD,'color',[0.9 0.6 0]);
+    e9 = errorbar(d,MC_A_M_NH4,MC_A_M_NH4_SD,'color',[0.35 0.7 0.9]);
+    e10 = errorbar(d,MC_A_M_UREA,MC_A_M_D_UREA_SD,'color',[0 0.45 0.70]);
+    e11 = errorbar(d,MC_A_M_PO4,MC_A_M_PO4_SD,'color',[0 0.6 .5]);
+    e12 = errorbar(d,MC_A_M_NP,MC_A_M_NP_SD,'color',[0.8 0.4 0]);
     title('August 2019 Maumee Bay No Dilution Microcystin Production')
     xlabel('Days (a)')
     ylabel('microcystin (\mug L^-^1)')
-    ylim([0 200])
+    ylim([0 20])
     hold off
    
     subplot(2,2,2)
@@ -340,7 +346,7 @@ elseif z == 4
     title('August 2019 Maumee Bay 40% Dilution Microcystin Production')
     xlabel('Days (b)')
     ylabel('microcystin (\mug L^-^1)')
-    ylim([0 80])
+    ylim([0 20])
     hold off
     
     subplot(2,2,3)
@@ -368,6 +374,7 @@ elseif z == 5
     labl1J = ["Control";"+NO_3";"+NH_4";"+PO_4";"+N&P"];
     model_seriese = [JA JAD]; 
     model_errore = [JAS JADS];
+    d = [1,2,3,4];
     subplot(2,2,1)
     hold on
     h1 = plot(d,ATX_J_S_Control,'-o','color',[0 0 0],'markerfacecolor',[0 0 0]);
@@ -383,7 +390,7 @@ elseif z == 5
     title('June 2019 Sandusky Bay No Dilution Anatoxin Production')
     xlabel('Days (a)')
     ylabel('anatoxin (\mug L^-^1)')
-    ylim([0 200])
+    ylim([0 0.7])
     hold off
    
     subplot(2,2,2)
@@ -401,7 +408,7 @@ elseif z == 5
     title('June 2019 Sandusky Bay 40% Dilution Anatoxin Production')
     xlabel('Days (b)')
     ylabel('anatoxin (\mug L^-^1)')
-    ylim([0 80])
+    ylim([0 0.7])
     hold off
    
     subplot(2,2,3)
@@ -428,6 +435,7 @@ elseif z == 6
     labl1A = ["Control";"+NO_3";"+NH_4";"+Urea";"+PO_4";"+N&P"];
     model_seriese = [AA AAD]; 
     model_errore = [AAS AADS];
+    d = [1,2,3,4];
     subplot(2,2,1)
     hold on
     h1 = plot(d,ATX_A_S_Control,'-o','color',[0 0 0],'markerfacecolor',[0 0 0]);
@@ -445,7 +453,7 @@ elseif z == 6
     title('August 2019 Sandusky Bay No Dilution Anatoxin Production')
     xlabel('Days (a)')
     ylabel('anatoxin (\mug L^-^1)')
-    ylim([0 200])
+    ylim([0 9])
     hold off
    
     subplot(2,2,2)
@@ -465,7 +473,7 @@ elseif z == 6
     title('August 2019 Sandusky Bay 40% Dilution Anatoxin Production')
     xlabel('Days (b)')
     ylabel('anatoxin (\mug L^-^1)')
-    ylim([0 80])
+    ylim([0 9])
     hold off
     
     subplot(2,2,3)
@@ -487,7 +495,4 @@ elseif z == 6
     ylabel('Normalized Production Rate (d^-^1)')
     hold off
 end
-    
-    
-    
-                    
+ 

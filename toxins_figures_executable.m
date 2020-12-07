@@ -1,5 +1,5 @@
 %%Executable File for Barnard et al. (In Prep) Toxins
-%Please cite as Barnard, M.A. (2020) https://github.com/malcolmbarnard/WLE_Barnard_et_al_Toxins 
+%Please cite as Barnard, M.A. (2020) GitHub: malcolmbarnard/WLE_Barnard_et_al_Toxins www.doi.org/10.5281/zenodo.4281127
 %Must import 2019ErieDataForImport.csv prior to running the script 
 z = 1;
 % Execubtable demands
@@ -285,9 +285,9 @@ elseif z == 3
     e3 = errorbar(d,MCC_J_S_NH4,MCC_J_S_NH4_SD,'color',[0.35 0.7 0.9]);
     e4 = errorbar(d,MCC_J_S_PO4,MCC_J_S_PO4_SD,'color',[0 0.6 .5]);
     e5 = errorbar(d,MCC_J_S_NP,MCC_J_S_NP_SD,'color',[0.8 0.4 0]);
-    title('June 2019 Sandusky Bay No Dilution Biomass-Normalized Microcystin Concentrations')
+    title('June 2019 Sandusky Bay No Dilution Microcystin:Chl a Ratios')
     xlabel('Days (b)')
-    ylabel('biomass-normalized microcystin (\mug microcystin \mug chl a^-^1)')
+    ylabel('Microcystin:Chl a Ratio (\mug microcystin \mug chl a^-^1)')
     ylim([-0.2 0.2])
     hold off
   
@@ -321,9 +321,9 @@ elseif z == 3
     e9 = errorbar(d,MCC_J_S_D_NH4,MCC_J_S_D_NH4_SD,'color',[0.35 0.7 0.9]);
     e11 = errorbar(d,MCC_J_S_D_PO4,MCC_J_S_D_PO4_SD,'color',[0 0.6 .5]);
     e12 = errorbar(d,MCC_J_S_D_NP,MCC_J_S_D_NP_SD,'color',[0.8 0.4 0]); 
-    title('June 2019 Sandusky Bay 40% Dilution Biomass-Normalized Microcystin Concentrations')
+    title('June 2019 Sandusky Bay 40% Dilution Microcystin:Chl a Ratios')
     xlabel('Days (d)')
-    ylabel('biomass-normalized microcystin (\mug microcystin \mug chl a^-^1)')
+    ylabel('Microcystin:Chl a Ratio (\mug microcystin \mug chl a^-^1)')
     ylim([-0.2 0.2])
     hold off
     
@@ -407,9 +407,9 @@ elseif z == 4
     e10 = errorbar(d,MCC_A_M_UREA,MCC_A_M_D_UREA_SD,'color',[0 0.45 0.70]);
     e11 = errorbar(d,MCC_A_M_PO4,MCC_A_M_PO4_SD,'color',[0 0.6 .5]);
     e12 = errorbar(d,MCC_A_M_NP,MCC_A_M_NP_SD,'color',[0.8 0.4 0]);
-    title('August 2019 Maumee Bay No Dilution Biomass-Normalized Microcystin Concentrations')
+    title('August 2019 Maumee Bay No Dilution Microcystin:Chl a Ratios')
     xlabel('Days (b)')
-    ylabel('biomass-normalized microcystin (\mug microcystin \mug chl a^-^1)')
+    ylabel('Microcystin:Chl a Ratio (\mug microcystin \mug chl a^-^1)')
     ylim([-1.5 1.5])
     hold off
     
@@ -447,9 +447,9 @@ elseif z == 4
     e10 = errorbar(d,MCC_A_M_D_UREA,MCC_A_M_D_UREA_SD,'color',[0 0.45 0.70]);
     e11 = errorbar(d,MCC_A_M_D_PO4,MCC_A_M_D_PO4_SD,'color',[0 0.6 .5]);
     e12 = errorbar(d,MCC_A_M_D_NP,MCC_A_M_D_NP_SD,'color',[0.8 0.4 0]);
-    title('August 2019 Maumee Bay 40% Biomass-Normalized Dilution Microcystin Concentrations')
+    title('August 2019 Maumee Bay 40% Microcystin:Chl a Ratios')
     xlabel('Days (d)')
-    ylabel('biomass-normalized microcystin (\mug microcystin \mug chl a^-^1)')
+    ylabel('Microcystin:Chl a Ratio (\mug microcystin \mug chl a^-^1)')
     ylim([-1.5 1.5])
     hold off
     
@@ -489,6 +489,7 @@ subplot(3,2,6)
     set(gca,'XTick',1:ngroups,'xticklabel',labl1A)
     xlabel('Treatment (f)')
     ylabel('Normalized Production Rate (d^-^1)')
+    ylim([-1.7 1.5])
     hold off
    
 elseif z == 5
@@ -529,9 +530,9 @@ elseif z == 5
     e3 = errorbar(d,ATXC_J_S_NH4,ATXC_J_S_NH4_SD,'color',[0.35 0.7 0.9]);
     e5 = errorbar(d,ATXC_J_S_PO4,ATXC_J_S_PO4_SD,'color',[0 0.6 .5]);
     e6 = errorbar(d,ATXC_J_S_NP,ATXC_J_S_NP_SD,'color',[0.8 0.4 0]);
-    title('June 2019 Sandusky Bay No Dilution Biomass-Normalized Anatoxin Concentrations')
+    title('June 2019 Sandusky Bay No Dilution Anatoxin:Chl a Ratios')
     xlabel('Days (b)')
-    ylabel('biomass-normalized anatoxin (\mug anatoxin \mug chl a^-^1)')
+    ylabel('Anatoxin:Chl a Ratio (\mug anatoxin \mug chl a^-^1)')
     ylim([-0.1 0.15])
     hold off
     
@@ -565,9 +566,9 @@ elseif z == 5
     e9 = errorbar(d,ATXC_J_S_D_NH4,ATXC_J_S_D_NH4_SD,'color',[0.35 0.7 0.9]);
     e11 = errorbar(d,ATXC_J_S_D_PO4,ATXC_J_S_D_PO4_SD,'color',[0 0.6 .5]);
     e12 = errorbar(d,ATXC_J_S_D_NP,ATXC_J_S_D_NP_SD,'color',[0.8 0.4 0]);
-    title('June 2019 Sandusky Bay 40% Dilution Biomass-Normalized Anatoxin Concentrations')
+    title('June 2019 Sandusky Bay 40% Dilution Anatoxin:Chl a Ratios')
     xlabel('Days (d)')
-    ylabel('biomass-normalized anatoxin (\mug anatoxin \mug chl a^-^1)')
+    ylabel('Anatoxin:Chl a Ratio (\mug anatoxin \mug chl a^-^1)')
     ylim([-0.1 0.15])
     hold off
     
@@ -651,9 +652,9 @@ elseif z == 6
     e4 = errorbar(d,ATXC_A_S_UREA,ATXC_A_S_UREA_SD,'color',[0 0.45 0.70]);
     e5 = errorbar(d,ATXC_A_S_PO4,ATXC_A_S_PO4_SD,'color',[0 0.6 .5]);
     e6 = errorbar(d,ATXC_A_S_NP,ATXC_A_S_NP_SD,'color',[0.8 0.4 0]);
-    title('August 2019 Sandusky Bay No Dilution Biomass-Normalized Anatoxin Concentrations')
+    title('August 2019 Sandusky Bay No Dilution Anatoxin:Chl a Ratios')
     xlabel('Days (b)')
-    ylabel('biomass-normalized anatoxin (\mug anatoxin \mug chl a^-^1)')
+    ylabel('Anatoxin:Chl a Ratio (\mug anatoxin \mug chl a^-^1)')
     ylim([-0.4 0.4])
     hold off
     
@@ -691,9 +692,9 @@ elseif z == 6
     e10 = errorbar(d,ATXC_A_S_D_UREA,ATXC_A_S_D_UREA_SD,'color',[0 0.45 0.70]);
     e11 = errorbar(d,ATXC_A_S_D_PO4,ATXC_A_S_D_PO4_SD,'color',[0 0.6 .5]);
     e12 = errorbar(d,ATXC_A_S_D_NP,ATXC_A_S_D_NP_SD,'color',[0.8 0.4 0]);
-    title('August 2019 Sandusky Bay 40% Dilution Biomass-Normalized Anatoxin Concentrations')
+    title('August 2019 Sandusky Bay 40% Dilution Anatoxin:Chl a Ratios')
     xlabel('Days (d)')
-    ylabel('biomass-normalized anatoxin (\mug anatoxin \mug chl a^-^1)')
+    ylabel('Anatoxin:Chl a Ratio (\mug anatoxin \mug chl a^-^1)')
     ylim([-0.4 0.4])
     hold off
     

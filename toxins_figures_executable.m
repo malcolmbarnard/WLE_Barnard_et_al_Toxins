@@ -1,5 +1,5 @@
 %%Executable File for Barnard et al. (In Review) Toxins
-%Please cite as Barnard, M.A. (2020) GitHub: malcolmbarnard/WLE_Barnard_et_al_Toxins www.doi.org/10.5281/zenodo.4281127
+%Please cite as Barnard, M.A. (2021) GitHub: malcolmbarnard/WLE_Barnard_et_al_Toxins www.doi.org/10.5281/zenodo.4281127
 %Must import 2019ErieDataForImport.csv prior to running the script 
 z = 1;
 % Execubtable demands

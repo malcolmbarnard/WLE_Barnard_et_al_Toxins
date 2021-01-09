@@ -1,5 +1,6 @@
-%%Executable File for Barnard et al. (In Review) Toxins
+%%Executable File for Barnard, M.A., et al. Roles of Nutrient Limitation on Western Lake Erie CyanoHAB Toxin Production. Toxins 2021, 13, 47. https://doi.org/10.3390/toxins13010047
 %Please cite as Barnard, M.A. (2021) GitHub: malcolmbarnard/WLE_Barnard_et_al_Toxins www.doi.org/10.5281/zenodo.4281127
+%Please also cite as Barnard, M.A., et al. Roles of Nutrient Limitation on Western Lake Erie CyanoHAB Toxin Production. Toxins 2021, 13, 47. https://doi.org/10.3390/toxins13010047
 %Must import 2019ErieDataForImport.csv prior to running the script 
 z = 1;
 % Execubtable demands

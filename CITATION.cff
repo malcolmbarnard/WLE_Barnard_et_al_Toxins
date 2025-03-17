@@ -1,0 +1,75 @@
+cff-version: 1.2.0
+message: If you use this software, please cite both the article from preferred-citation and the software itself.
+authors:
+  - family-names: Barnard
+    given-names: Malcolm A.
+  - family-names: Chaffin
+    given-names: Justin D.
+  - family-names: Plaas
+    given-names: Haley E.
+  - family-names: Boyer
+    given-names: Gregory L.
+  - family-names: Wei
+    given-names: Bofan
+  - family-names: Wilhelm
+    given-names: Steven W.
+  - family-names: Rossignol
+    given-names: Karen L.
+  - family-names: Braddy
+    given-names: Jeremy S.
+  - family-names: Bullerjahn
+    given-names: George S.
+  - family-names: Bridgeman
+    given-names: Thomas B.
+  - family-names: Davis
+    given-names: Timothy W.
+  - family-names: Wei
+    given-names: Jin
+  - family-names: Bu
+    given-names: Minsheng
+  - family-names: Paerl
+    given-names: Hans W.
+title: Roles of Nutrient Limitation on Western Lake Erie CyanoHAB Toxin Production
+version: 1.0.0
+url: http://dx.doi.org/10.3390/toxins13010047
+doi: 10.3390/toxins13010047
+date-released: '2021-03-17'
+preferred-citation:
+  authors:
+    - family-names: Barnard
+      given-names: Malcolm A.
+    - family-names: Chaffin
+      given-names: Justin D.
+    - family-names: Plaas
+      given-names: Haley E.
+    - family-names: Boyer
+      given-names: Gregory L.
+    - family-names: Wei
+      given-names: Bofan
+    - family-names: Wilhelm
+      given-names: Steven W.
+    - family-names: Rossignol
+      given-names: Karen L.
+    - family-names: Braddy
+      given-names: Jeremy S.
+    - family-names: Bullerjahn
+      given-names: George S.
+    - family-names: Bridgeman
+      given-names: Thomas B.
+    - family-names: Davis
+      given-names: Timothy W.
+    - family-names: Wei
+      given-names: Jin
+    - family-names: Bu
+      given-names: Minsheng
+    - family-names: Paerl
+      given-names: Hans W.
+  title: Roles of Nutrient Limitation on Western Lake Erie CyanoHAB Toxin Production
+  doi: 10.3390/toxins13010047
+  url: http://dx.doi.org/10.3390/toxins13010047
+  type: article-journal
+  pages: '47'
+  year: '2021'
+  conference: {}
+  publisher:
+    name: MDPI AG
